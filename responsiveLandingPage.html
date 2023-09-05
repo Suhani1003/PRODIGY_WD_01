@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            border: border-box;
+        }
+        .nav-bar{
+            height: 75px;
+            width: 100%;
+            background-color:#27374D;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+           font-family: Arial;
+           
+           
+        }
+        #logo1{
+            float: left;
+        }
+        
+        .logo{
+            color: white;
+            font-weight: 700;
+            border: 1.5px transparent;
+            text-decoration: none;
+            margin: 2px;
+            padding: 10px;
+        }
+       
+        .nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(210, 143, 54);
+    width: 450px;
+    height: 40px;
+    border-radius: 5px;
+}
+.nav-search:hover{
+border: 2px solid rgb(255, 191, 73);
+}
+
+.search-input{
+    width: 100%;
+    font-size: 1 rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+}
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: rgb(242, 176, 76);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #0f1111;
+}
+
+        .logo:hover{
+            border: 1.5px white solid;
+            border-radius: 4px;
+            background-color: white;
+            color: black;
+
+        }
+        .login{
+            margin: 5px;
+            padding: 8px;
+            color: white;
+            font-weight: 500;
+            border: 1.5px white solid;
+            border-radius: 4px;
+        }
+        .login:hover{
+            background-color: white;
+            color: black;
+        }
+        .signup{
+            margin: 5px;
+            padding: 12px;
+            color: black;
+            border-radius: 4px;
+            
+            background-color: #FFBF00;
+
+        }
+        .signup:hover{
+            background-color: #FFD700;
+        }
+        .Home{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: 700;
+            font-size: 2rem;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            min-height: 100vh;
+            background-color:#526D82 ;
+           
+        }
+        .Home:nth-child(odd){
+         background-color: #9DB2BF;
+        }
+       
+        /* For Mobile Portrait View */
+@media screen and (max-device-width: 500px)
+    and (orientation: portrait) {
+    .nav-bar {
+        width: 100%;
+        height: 100%;
+        background-color:#0f1111;
+        color: #fff;
+        
+    }
+     .logo{
+        width: 100%;
+        flex-basis: 100%;
+    }
+    .nav-search{
+        order: 1;
+    }
+    .Home{
+        background-color: #282A3A;
+    }
+    .Home:nth-child(odd){
+         background-color:#444444;
+        }
+    
+    }
+
+        @media screen and (min-device-width: 768px)
+    and (max-device-width: 1024px) {
+    .nav-bar {
+        width: 100%;
+        height: 100%;
+        background-color: #0D1282;
+        color: black;
+        flex-basis: auto;
+        flex-wrap: wrap;
+    }
+    .Home{
+        background-color: #EEEDED;
+        color: black;
+    }
+    .Home:nth-child(odd){
+         background-color:#D4ADFC;
+        }
+        .search-icon{
+            background-color: #F0DE36;
+        }
+        .signup{
+            background-color: #F0DE36;
+        }
+}
+        
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="logo " id="logo1">
+         <p>My Site.</p>
+        </div>
+        <div class="home logo " >
+            <p>Home</p>
+        </div>
+        <div class="Services logo">
+            <p>Services</p>
+        </div>
+<div class="about logo " >
+    <p>About Us</p>
+</div>
+<div class="contactus logo">
+    <p>Contact</p>
+</div>
+<div class="nav-search ">
+    
+    <input placeholder="Search" class="search-input">
+    <div class="search-icon">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+  </div>
+<div class="login ">
+    <p>Login</p>
+</div>
+<div class="signup ">
+
+    <p>Sign-up</p>
+</div>
+    </div>
+    <div class="Home" id="homee">
+        <p>HOME</p>
+    </div>
+    <div class="services Home" id="service">
+        <p>SERVICES</p>
+    </div>
+    <div class="Aboutus Home" id="aboutt">
+        <p>ABOUT US</p>
+    </div>
+    <div class="contact Home">
+        <p>CONTACT</p>
+    </div>
+</body>
+</html>
